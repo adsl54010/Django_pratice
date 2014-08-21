@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'author',
     'south',
+    'book',
 )
 
 MIDDLEWARE_CLASSES = (
