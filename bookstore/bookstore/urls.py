@@ -5,8 +5,10 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'bookstore.views.home', name='home'),
+    url(r'^$', 'book.views.index'),
     # url(r'^blog/', include('blog.urls')),
+    #url(r'^$','bookstore.book.views.index'),
+    #url(r'^books/(?p<book_id>\d+)/$','bookstore.book.views.detail'),
 
     url(r'^admin/', include(admin.site.urls)),
 )
