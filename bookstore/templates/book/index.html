@@ -1,1 +1,15 @@
-{}
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>book</title>
+</head>
+<body>
+目前總共有{{books.count}}本書
+	<ul>
+	{% for book in books %}
+		<li>書名;<a href="/book/{{book.id}}">{{book.title}}</a>({{book.page}})頁  售價：{{book.price}})</li>
+		{% endfor %}
+		</ul>
+</body>
+</html>

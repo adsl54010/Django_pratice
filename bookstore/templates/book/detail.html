@@ -1,0 +1,22 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>book</title>
+</head>
+<body>
+<h2>書名：{{book.title}}</h2>
+	<ul>
+		<li>({{book.page}})頁</li>
+		<li>售價：{{book.price}})</li>
+		<li>出售日期：{{book.publish_date}}</li>
+	</ul>
+	<h1>作者：{{book.author.name}}</h1>
+	聯絡資訊：
+	<ul>
+		<li>電話：{{book.author.tel}}</li>
+		<li>Email：{{book.author.email}}</li>
+		<li>地址：{{book.author.address}}</li>
+	</ul>
+</body>
+</html>
